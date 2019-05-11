@@ -1,0 +1,294 @@
+* {
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .2s;
+    -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+    -moz-transition-property: all;
+    -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+}
+
+.box {
+    padding: 1em 1em;
+    margin: 1em 10em;
+    border: double 5px #4bb7fa;
+    text-align:center;
+}
+.box p {
+    margin: 0;
+    padding: 0;
+}
+
+.btn-menu{
+    color:#fff;
+    width: 300px ;
+    background: #4bb7fa;
+    padding:10px 20px;
+    font-size:18px;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+
+.btn-menu:hover{
+    border:none;
+    background:#fff;
+    color:#1b1b1b;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*new version*/
+.nav {
+    width: 750px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+}
+.nav li {
+    position: relative;
+    list-style: none;
+}
+.nav li a {
+    display: block;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    line-height: 2.8;
+    background: #9fb7d4;
+    text-decoration: none;
+    border-right: 1px solid #eee;
+    box-sizing: border-box;
+}
+.nav > li:hover > a {/*layer-1*/
+    color: orange;
+    background: #afc6e2;
+}
+.nav > li li:hover > a {/*layer-2*/
+    color: olive;
+    background: #afc6e2;
+}
+.nav li ul {
+    top: 40px;
+    left: -40px;
+    position: absolute;
+}
+.nav li ul li {
+    overflow: hidden;
+    height: 0;
+}
+.nav li ul li a {
+    border-top: 1px solid #eee;
+}
+.nav li:hover > ul > li {
+    overflow: visible;
+    height: 40px;
+}
+.nav li ul li ul {
+    top: 0;
+    left: 110px;
+}
+.nav li ul li ul:before {/*layer-2▷*/
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 30px;
+    border: 5px solid transparent;
+    border-left: 5px solid #fff;
+}
+.nav li ul li ul li:hover > a {/*layer-3*/
+    color: pink;
+    background: #afc6e2;
+}
+.nav li ul li ul.left {
+    top: 0;
+    left: -190px;
+}
+.nav li ul li ul.left:before,/*layer-2-left▷*/
+.nav li ul li ul li ul.left:before {/*layer-3-left▷*/
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 190px;
+    border: 5px solid transparent;
+    border-right: 5px solid #fff;
+}
+.nav li ul li ul.left li:hover > a {/*layer-2-left*/
+    color: pink;
+    background: #afc6e2;
+}
+.nav li ul li ul li ul.left li:hover > a {/*layer-3-left*/
+    color: purple;
+    background: #afc6e2;
+}
+
+.content {
+    width: auto;
+    height: auto;
+    background: #eee;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dropmenu{
+  *zoom: 1;
+  list-style-type: none;
+  width: auto;
+  height: auto;
+  margin: 5px auto ;
+  padding: 0;
+  text-align:center;
+}
+.dropmenu:before, .dropmenu:after{
+  content: "";
+  display: table;
+}
+.dropmenu:after{
+  clear: both;
+}
+.dropmenu li{
+  position: relative;
+  width: 20%;
+  float: left;
+  margin: 2px;
+  padding: 0;
+  text-align: center;
+}
+.dropmenu li a{
+  display: block;
+  margin: 0;
+  padding: 15px 0 11px;
+  background: #4bb7fa;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  text-decoration: none;
+}
+.dropmenu li ul{
+  list-style: none;
+  position: absolute;
+  z-index: 9999;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+.dropmenu li ul li{
+  width: 100%;
+}
+.dropmenu li ul li a{
+  padding: 13px 15px;
+  background: #4bb7fa;
+  text-align: left;
+}
+
+/*begin*/
+
+/*end*/
+
+
+
+.dropmenu li:hover > a{
+  background: #4b8bfa;
+}
+.dropmenu li a:hover{
+  background: #4b8bfa;
+}
+
+#flip2 li ul {
+  visibility: hidden;
+  perspective: 400px;
+}
+#flip2 li:hover ul{
+  visibility: visible;
+}
+#flip2 ul li{
+  transform: rotateY(90deg);
+  transform-origin: 50% 0;
+  transition: .3s;
+}
+#flip2 li:hover li{
+  transform: rotateY(0);
+}
+#flip2 ul li:nth-child(2) {
+  transition-delay: .1s;
+}
+#flip2 ul li:nth-child(3) {
+  transition-delay: .2s;
+}
+#flip2 ul li:nth-child(4) {
+  transition-delay: .3s;
+}
+#flip2 ul li:nth-child(5) {
+  transition-delay: .4s;
+}
+
+/**/
+
+/**/

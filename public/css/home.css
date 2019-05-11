@@ -1,0 +1,23 @@
+.spin-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #4bb7fa;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  border: double 4px #4bb7fa;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  transition: .6s;
+}
+
+
+/*
+.spin-btn:hover{
+  -webkit-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+*/
